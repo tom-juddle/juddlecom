@@ -1,9 +1,20 @@
 import React from 'react'
-import { Container, Row, Col, Nav,
-         Navbar, NavbarBrand} from 'reactstrap'
-import styled from 'styled-components'
+import { Container, Row, Col, Nav, Navbar, NavbarBrand, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap'
+import styled, {css} from 'styled-components'
 import Styles from '../css/index.scss'
 import navLogo from '../static/images/nav-logo.png';
+import ContactForm from '../components/contactform.jsx';
+import bubble from "../static/images/bubble.png";
+import Feature from "./feature";
+import skills from "../static/images/skills.svg";
+import location from "../static/images/location.svg";
+import matching from "../static/images/matching.svg";
+import chat from "../static/images/chat.svg";
+import matchPhone from "../static/images/match_phone.png";
+import chatPhone from "../static/images/chat_phone.png";
+import skillsPhone from "../static/images/skills_phone.png";
+import bg1 from '../static/images/bg1.png';
+import ReactGA from 'react-ga';
 
 const FooterBlock = styled.footer`
 	background: #000;
@@ -35,6 +46,65 @@ const FooterBlock = styled.footer`
 	}
 `;
 
+const Bg = styled.div`
+  background: url(${bg1}) no-repeat;
+  background-size: cover;
+`;
+
+const Title = styled.h1`
+  color: #ffffff;
+  font-family: "Helvetica Neue";
+  font-size: 7vh;
+  font-weight: 700;
+  /* Text style for "Match and" */
+  letter-spacing: -1.5px;
+  /* Text style for "with emplo" */
+  letter-spacing: -1.5px;
+  line-height: 64px;
+  text-align: center;
+`;
+
+const P = styled.p`
+  font-family: "Helvetica Neue";
+  font-size: 3vh;
+  text-align: center;
+  font-weight: 400;
+  /* Text style for "Juddle is" */
+  letter-spacing: -0.75px;
+  color: #fff;
+`;
+
+const JuddleButton = styled.button`
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  border: solid 1px #fff;
+  width: 50vh;
+  padding: 2vh 0;
+  font-family: "Helvetica Neue";
+  font-size: 3vh;
+  margin: 20px 0;
+  ${props => props.primary && css`
+		background-color: #4170b4;
+		border: none;
+		margin: 0;
+	`}
+`;
+
+const SpeechBubble = styled.img`
+  max-width: 132px;
+  width: 100%;
+  max-height: 130px;
+  margin-top: 9vh;
+`;
+
+const containerStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center'
+};
+
 export default class extends React.Component {
 
   static propTypes() {
@@ -46,20 +116,30 @@ export default class extends React.Component {
   }
   
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       navOpen: false,
       modal: false
-    }
+    };
     this.toggleModal = this.toggleModal.bind(this)
   }
-  
+
   async toggleModal(e) {
-    if (e) e.preventDefault()
+    console.log('fires');
+    if (e) e.preventDefault();
 
     this.setState({
       modal: !this.state.modal
     });
+  }
+
+  initializeReactGA  = () => {
+    ReactGA.initialize('UA-59596713-2');
+    ReactGA.pageview(window.location.hostname + location.pathname + location.search);
+  };
+
+  componentDidMount() {
+    this.initializeReactGA();
   }
   
   render() {
@@ -105,7 +185,7 @@ export default class extends React.Component {
             </Nav>
           </div>
         </Navbar>
-        <MainBody navmenu={this.props.navmenu} fluid={this.props.fluid} container={this.props.container}>
+        <MainBody navmenu={this.props.navmenu} toggleModal={this.toggleModal} fluid={this.props.fluid} container={this.props.container}>
           {this.props.children}
         </MainBody>
 
@@ -119,6 +199,7 @@ export default class extends React.Component {
             </div>
           </Container>
         </FooterBlock>
+        <ContactFormModal modal={this.state.modal} toggleModal={this.toggleModal} />
       </React.Fragment>
     )
   }
@@ -129,6 +210,76 @@ export class MainBody extends React.Component {
     if (this.props.container === false) {
       return (
         <React.Fragment>
+          <Bg>
+            <Container style={containerStyle}>
+              <SpeechBubble
+                src={bubble}
+                alt="juddle bubble"
+              />
+              <Title>
+                Match and Chat with employers
+              </Title>
+              <P>
+                Juddle is an on-demand job site that
+                allows you to connect directly with
+                employers based on your skills and chat within minutes.
+              </P>
+              <div>
+                <JuddleButton
+                  primary
+                  onClick={this.props.toggleModal}
+                  modal={this.props.modal}
+                  toggleModal={this.props.toggleModal}
+                >
+                  View A Demo
+                </JuddleButton>
+              </div>
+              <JuddleButton
+              >
+                Employer? Join Here
+              </JuddleButton>
+            </Container>
+          </Bg>
+          <Feature
+            dark={false}
+            h2={"You're in control"}
+            image={skills}
+            h3={"Skills"}
+            para={"Use your skills and not a CV to match with employers"}
+          />
+          <Feature
+            dark={true}
+            image={location}
+            h3={"Location"}
+            para={"Juddle picks up your location to show the jobs nearest you"}
+          />
+          <Feature
+            dark={false}
+            image={matching}
+            h3={"Matching"}
+            para={"We use artificial intelligence and machine learning to match you directly to the right employers."}
+          />
+          <Feature
+            dark={true}
+            image={chat}
+            h3={"Chat"}
+            para={"We allow you to chat directly with the employer straight after matching, getting you the job quicker"}
+          />
+          <Feature
+            dark={false}
+            h2={"Match Directly with Employers"}
+            image={matchPhone}
+          />
+          <Feature
+            dark={true}
+            h2={"Chat instantly with Employers"}
+            image={chatPhone}
+          />
+          <Feature
+            dark={false}
+            h2={"Use Skills to find the right people"}
+            image={skillsPhone}
+          />
           {this.props.children}
         </React.Fragment>
       )
@@ -149,5 +300,20 @@ export class MainBody extends React.Component {
         </Container>
       )
     }
+  }
+}
+
+export class ContactFormModal extends React.Component {
+  render() {
+    if (this.props.providers === null) return null
+
+    return (
+      <Modal isOpen={this.props.modal} toggle={this.props.toggleModal} style={{maxWidth: 700}}>
+        <ModalHeader>Sign up / Sign in</ModalHeader>
+        <ModalBody style={{padding: '1em 2em'}}>
+          <ContactForm/>
+        </ModalBody>
+      </Modal>
+    )
   }
 }
