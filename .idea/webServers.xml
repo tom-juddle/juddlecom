@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8fbc004e-7d17-485e-8ed3-36fb94bf8335" name="juddle-london-01" url="http://45.32.180.164">
+        <fileTransfer host="45.32.180.164" port="22" rootFolder="/srv/users/serverpilot/apps/juddlecom/public" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
