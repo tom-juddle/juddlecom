@@ -2,19 +2,21 @@ import React from 'react'
 import { Container, Row, Col, Nav, Navbar, NavbarBrand, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap'
 import styled, {css} from 'styled-components'
 import Styles from '../css/index.scss'
-import navLogo from '../static/images/nav-logo.png';
+import navLogo from '../images/nav-logo.png';
 import ContactForm from '../components/contactform.jsx';
-import bubble from "../static/images/bubble.png";
+import bubble from "../images/bubble.png";
 import Feature from "./feature";
-import skills from "../static/images/skills.svg";
-import location from "../static/images/location.svg";
-import matching from "../static/images/matching.svg";
-import chat from "../static/images/chat.svg";
-import matchPhone from "../static/images/match_phone.png";
-import chatPhone from "../static/images/chat_phone.png";
-import skillsPhone from "../static/images/skills_phone.png";
-import bg1 from '../static/images/bg1.png';
+import skills from "../images/skills.svg";
+import location from "../images/location.svg";
+import matching from "../images/matching.svg";
+import chat from "../images/chat.svg";
+import matchPhone from "../images/match_phone.png";
+import chatPhone from "../images/chat_phone.png";
+import skillsPhone from "../images/skills_phone.png";
+import bg1 from '../images/bg1.png';
 import ReactGA from 'react-ga';
+import modalHeaderImg from '../images/juddle_demo_request.png';
+import CookieConsent from "react-cookie-consent";
 
 const FooterBlock = styled.footer`
 	background: #000;
@@ -87,9 +89,16 @@ const JuddleButton = styled.button`
   ${props => props.primary && css`
 		background-color: #4170b4;
 		border: none;
-		margin: 0;
+		margin: 20px 0;
 	`}
 `;
+
+const juddleButtonSmall = {
+  width: '20vh',
+  flexBasis: 'min-content',
+  padding: '10px 15px',
+  margin: '0'
+};
 
 const SpeechBubble = styled.img`
   max-width: 132px;
@@ -103,6 +112,16 @@ const containerStyle = {
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center'
+};
+
+const NavBarStyles = {
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'middle',
+  alignContent: 'middle',
+  width: '100%',
+  justifyContent: 'space-between',
+  marginRight: '0'
 };
 
 export default class extends React.Component {
@@ -125,7 +144,6 @@ export default class extends React.Component {
   }
 
   async toggleModal(e) {
-    console.log('fires');
     if (e) e.preventDefault();
 
     this.setState({
@@ -145,18 +163,41 @@ export default class extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <header>
+        <head>
           <meta charSet="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
-          <title>{this.props.title || 'Juddle | Re-imagine Recruitment'}</title>
           <script src="https://cdn.polyfill.io/v2/polyfill.min.js"/>
           <style dangerouslySetInnerHTML={{__html: Styles}}/>
-        </header>
+          <title>Juddle | Re-imagine Recruitment</title>
+          <meta name="description" content="Juddle is an innovative new recruiting technology, driven by artificial intelligence. Sign up below and be one of the first to receive our beta app." />
+          <meta property="og:description" content="Juddle is an innovative new recruiting technology, driven by artificial intelligence. Sign up below and be one of the first to receive our beta app." />
+          <meta property="og:type" content="business" />
+          <meta property="og:title" content="Juddle | Re-imagine Recruitment" />
+          <meta property="og:url" content="http://juddle.com/" />
+          <meta property="og:image" content="http://juddle.com/images/juddle-web-image.jpg" />
+          <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
+          <link rel="manifest" href="../images/site.webmanifest" />
+          <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5" />
+          <meta name="msapplication-TileColor" content="#2b5797" />
+          <meta name="theme-color" content="#ffffff" />
+          <meta name="msapplication-config" content="../images/browserconfig.xml" />
+        </head>
         <Navbar light className="navbar navbar-expand-md pt-3 pb-3">
-          <NavbarBrand href="/">
-            <img src={navLogo} alt="Juddle"/>
+          <NavbarBrand style={NavBarStyles} href="/">
+            <img src={navLogo} alt="Juddle" height={"50"}/>
+            <JuddleButton
+              primary
+              onClick={this.toggleModal}
+              modal={this.modal}
+              toggleModal={this.toggleModal}
+              style={juddleButtonSmall}
+            >
+              View A Demo
+            </JuddleButton>
           </NavbarBrand>
-          <input className="nojs-navbar-check" id="nojs-navbar-check" type="checkbox" aria-label="Menu"/>
+          {/*<input className="nojs-navbar-check" id="nojs-navbar-check" type="checkbox" aria-label="Menu"/>
           <label tabIndex="1" htmlFor="nojs-navbar-check" className="nojs-navbar-label mt-2" />
           <div className="nojs-navbar">
             <Nav navbar>
@@ -179,11 +220,11 @@ export default class extends React.Component {
                   {/*</Link>*/}
                   {/*<Link prefetch href="/examples/styling">*/}
                   {/*  <a href="/examples/styling" className="dropdown-item">Styling</a>*/}
-                  {/*</Link>*/}
+                  {/*</Link>
                 </div>
               </div>
             </Nav>
-          </div>
+          </div>*/}
         </Navbar>
         <MainBody navmenu={this.props.navmenu} toggleModal={this.toggleModal} fluid={this.props.fluid} container={this.props.container}>
           {this.props.children}
@@ -210,6 +251,18 @@ export class MainBody extends React.Component {
     if (this.props.container === false) {
       return (
         <React.Fragment>
+          <CookieConsent
+            enableDeclineButton
+            location="bottom"
+            buttonText="I accept"
+            cookieName="juddleCookies"
+            style={{ background: "#2B373B" }}
+            buttonStyle={{ borderRadius: "5px", background: "#1270b7", color: "#fff", fontSize: "16px" }}
+            declineButtonStyle={{borderRadius: "5px", background: "transparent", border: "solid 1px #fff", color: "#fff", fontSize: "16px"}}
+            expires={150}
+          >
+            This website uses cookies and analytics to enhance the user experience.{" "}
+          </CookieConsent>
           <Bg>
             <Container style={containerStyle}>
               <SpeechBubble
@@ -231,13 +284,13 @@ export class MainBody extends React.Component {
                   modal={this.props.modal}
                   toggleModal={this.props.toggleModal}
                 >
-                  View A Demo
+                  Request A Demo
                 </JuddleButton>
               </div>
-              <JuddleButton
+              {/*<JuddleButton
               >
                 Employer? Join Here
-              </JuddleButton>
+              </JuddleButton>*/}
             </Container>
           </Bg>
           <Feature
@@ -308,8 +361,8 @@ export class ContactFormModal extends React.Component {
     if (this.props.providers === null) return null
 
     return (
-      <Modal isOpen={this.props.modal} toggle={this.props.toggleModal} style={{maxWidth: 700}}>
-        <ModalHeader>Sign up / Sign in</ModalHeader>
+      <Modal isOpen={this.props.modal} toggle={this.props.toggleModal} style={{maxWidth: 490}}>
+        <ModalHeader style={{padding: '0'}}><img src={modalHeaderImg} style={{width:'100%'}} alt="Sign up for a demo"/></ModalHeader>
         <ModalBody style={{padding: '1em 2em'}}>
           <ContactForm/>
         </ModalBody>
