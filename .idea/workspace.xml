@@ -1,7 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c23e061-8cbc-4725-b779-0effa81f56f6" name="Default Changelist" comment="" />
+    <list default="true" id="6c23e061-8cbc-4725-b779-0effa81f56f6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/next.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/pages/_document.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/buttons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/buttons.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/contactform.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/contactform.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/feature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/feature.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/htmlHead.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/htmlHead.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/css/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/css/nojs-menus.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/nojs-menus.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/android-chrome-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/android-chrome-192x192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/apple-touch-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/bg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/bg1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/browserconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/browserconfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/bubble.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/bubble.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/chat.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/chat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/chat.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/chat.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/chat_phone.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/chat_phone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/facebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/facebook.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/favicon-16x16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/favicon-32x32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/google.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/google.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/juddle-web-image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/juddle-web-image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/juddle_demo_request.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/juddle_demo_request.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/juddle_icon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/juddle_icon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/location.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/location.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/location.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/location.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/match_phone.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/match_phone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/matching.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/matching.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/matching.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/matching.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/mstile-150x150.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/mstile-150x150.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/nav-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/nav-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/safari-pinned-tab.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/safari-pinned-tab.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/sign-in-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/sign-in-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/site.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/site.webmanifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/skills.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/skills.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/skills.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/skills.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/images/skills_phone.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/images/skills_phone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/yarn.lock" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -16,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="182">
+              <caret line="7" column="13" selection-end-line="12" selection-end-column="1" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -26,10 +73,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/components/layout.jsx">
+        <entry file="file://$PROJECT_DIR$/app/components/page.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+            <state relative-caret-position="234">
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -37,11 +84,53 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/components/htmlHead.jsx">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/buttons.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+            <state relative-caret-position="52">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/components/layout.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/pages/_document.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="1" column="52" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/pages/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/htmlHead.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="25" column="87" selection-start-line="7" selection-start-column="10" selection-end-line="25" selection-end-column="87" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -52,38 +141,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            <state relative-caret-position="112">
+              <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/yarn.lock">
+        <entry file="file://$PROJECT_DIR$/app/.babelrc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="356" column="17" selection-start-line="356" selection-start-column="17" selection-end-line="356" selection-end-column="17" />
+            <state relative-caret-position="233">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/public/manifest.json">
+        <entry file="file://$PROJECT_DIR$/app/next.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/components/feature.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="78">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -100,6 +177,7 @@
       <find>”</find>
       <find>React App</find>
       <find>juddleButton</find>
+      <find>footer</find>
     </findStrings>
     <replaceStrings>
       <replace>className</replace>
@@ -129,12 +207,22 @@
         <option value="$PROJECT_DIR$/app/src/components/contactform.jsx" />
         <option value="$PROJECT_DIR$/app/public/manifest.json" />
         <option value="$PROJECT_DIR$/app/build/manifest.json" />
-        <option value="$PROJECT_DIR$/app/package.json" />
         <option value="$PROJECT_DIR$/app/src/components/page.jsx" />
         <option value="$PROJECT_DIR$/app/public/index.html" />
         <option value="$PROJECT_DIR$/app/src/components/htmlHead.jsx" />
         <option value="$PROJECT_DIR$/app/src/components/layout.jsx" />
+        <option value="$PROJECT_DIR$/app/components/contactform.jsx" />
+        <option value="$PROJECT_DIR$/app/package.json" />
+        <option value="$PROJECT_DIR$/app/next.config" />
+        <option value="$PROJECT_DIR$/app/static/css/index.scss" />
+        <option value="$PROJECT_DIR$/app/components/page.jsx" />
+        <option value="$PROJECT_DIR$/app/next-config.js" />
+        <option value="$PROJECT_DIR$/app/next.config.js" />
+        <option value="$PROJECT_DIR$/app/.babelrc" />
+        <option value="$PROJECT_DIR$/app/pages/_document.js" />
         <option value="$PROJECT_DIR$/app/src/App.js" />
+        <option value="$PROJECT_DIR$/app/pages/index.js" />
+        <option value="$PROJECT_DIR$/app/components/layout.jsx" />
       </list>
     </option>
   </component>
@@ -163,14 +251,32 @@
               <item name="juddlecom" type="b2602c69:ProjectViewProjectNode" />
               <item name="juddlecom" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="juddlecom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="juddlecom" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="juddlecom" type="b2602c69:ProjectViewProjectNode" />
               <item name="juddlecom" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="juddlecom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="juddlecom" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="juddlecom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="juddlecom" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -196,14 +302,15 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/public" />
-      <recent name="$PROJECT_DIR$/app/src" />
-      <recent name="$PROJECT_DIR$/app" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/components" />
       <recent name="$PROJECT_DIR$/static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/static" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/public" />
+      <recent name="$PROJECT_DIR$/app/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -218,7 +325,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/juddlecom/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -227,6 +334,16 @@
       <command value="run" />
       <scripts>
         <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/app/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -244,8 +361,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
@@ -279,7 +397,7 @@
     </servers>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48264000" />
+    <option name="totallyTimeSpent" value="57606000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -297,7 +415,6 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2786753" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="File Transfer" weight="0.32913166" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23389356" />
@@ -309,11 +426,12 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32970297" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.4439776" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Remote Host" weight="0.32956383" />
+      <window_info anchor="bottom" id="File Transfer" order="11" weight="0.32913166" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
+      <window_info anchor="right" id="Remote Host" order="4" weight="0.32956383" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,15 +451,8 @@
     <entry file="file://$PROJECT_DIR$/app/src/index.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/components/buttons.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1127">
-          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/components/header.jsx" />
-    <entry file="file://$PROJECT_DIR$/app/src/css/nojs-menus.scss">
+    <entry file="file://$PROJECT_DIR$/app/static/css/nojs-menus.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../juddle-web-app/pages/_error.js">
@@ -351,13 +462,6 @@
           <folding>
             <element signature="e#81#106#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/css/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -374,23 +478,6 @@
           <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#div#6;n#div#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12061">
-          <caret line="464" column="37" selection-start-line="464" selection-start-column="37" selection-end-line="464" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/components/contactform.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1534">
-          <caret line="59" column="100" selection-start-line="59" selection-start-column="100" selection-end-line="59" selection-end-column="100" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -413,37 +500,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="356" column="17" selection-start-line="356" selection-start-column="17" selection-end-line="356" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/public/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build/index.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/components/page.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -469,27 +530,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/components/feature.jsx">
+    <entry file="file://$PROJECT_DIR$/app/yarn.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        <state relative-caret-position="104">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/contactform.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10036">
+          <caret line="386" column="18" selection-start-line="386" selection-start-column="18" selection-end-line="386" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/next.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        <state relative-caret-position="112">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/components/layout.jsx">
+    <entry file="file://$PROJECT_DIR$/app/.babelrc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        <state relative-caret-position="233">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/htmlHead.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="25" column="87" selection-start-line="7" selection-start-column="10" selection-end-line="25" selection-end-column="87" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/feature.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -498,21 +610,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="182">
+          <caret line="7" column="13" selection-end-line="12" selection-end-column="1" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/components/htmlHead.jsx">
+    <entry file="file://$PROJECT_DIR$/app/pages/_document.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+        <state relative-caret-position="26">
+          <caret line="1" column="52" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#64#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/page.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/buttons.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/layout.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
         </state>
       </provider>
     </entry>
