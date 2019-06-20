@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Mailchimp from 'react-mailchimp-form'
-import '../css/common.css';
+import '../static/css/common.css';
 import styled from 'styled-components';
 
 const Para = styled.p`

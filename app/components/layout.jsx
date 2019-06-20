@@ -1,22 +1,23 @@
 import React from 'react'
 import { Container, Row, Col, Nav, Navbar, NavbarBrand, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap'
-import styled, {css} from 'styled-components'
-import Styles from '../css/index.scss'
-import navLogo from '../images/nav-logo.png';
+import styled, {css} from 'styled-components';
+import '../static/css/bootstrap.min.css';
+import navLogo from '../static/images/nav-logo.png';
 import ContactForm from '../components/contactform.jsx';
-import bubble from "../images/bubble.png";
-import Feature from "./feature";
-import skills from "../images/skills.svg";
-import location from "../images/location.svg";
-import matching from "../images/matching.svg";
-import chat from "../images/chat.svg";
-import matchPhone from "../images/match_phone.png";
-import chatPhone from "../images/chat_phone.png";
-import skillsPhone from "../images/skills_phone.png";
-import bg1 from '../images/bg1.png';
+import bubble from "../static/images/bubble.png";
+import Feature from "../components/feature";
+import skills from "../static/images/skills.svg";
+import location from "../static/images/location.svg";
+import matching from "../static/images/matching.svg";
+import chat from "../static/images/chat.svg";
+import matchPhone from "../static/images/match_phone.png";
+import chatPhone from "../static/images/chat_phone.png";
+import skillsPhone from "../static/images/skills_phone.png";
+import bg1 from '../static/images/bg1.png';
 import ReactGA from 'react-ga';
-import modalHeaderImg from '../images/juddle_demo_request.png';
+import modalHeaderImg from '../static/images/juddle_demo_request.png';
 import CookieConsent from "react-cookie-consent";
+import Buttons from  "../components/buttons";
 
 const FooterBlock = styled.footer`
 	background: #000;
@@ -133,7 +134,7 @@ export default class extends React.Component {
       navmenu: React.PropTypes.boolean,
     }
   }
-  
+
   constructor(props) {
     super(props);
     this.state = {
@@ -159,7 +160,7 @@ export default class extends React.Component {
   componentDidMount() {
     this.initializeReactGA();
   }
-  
+
   render() {
     return (
       <React.Fragment>
@@ -186,20 +187,20 @@ export default class extends React.Component {
                 </div>
                 <div className="dropdown-menu">
                   {/*<Link prefetch href="/auth/index">*/}
-                  {/*  <a href="/auth/index" className="dropdown-item">Sign Up</a>*/}
-                  {/*</Link>*/}
-                  {/*<Link prefetch href="/examples/layout">*/}
-                  {/*  <a href="/examples/layout" className="dropdown-item">Layout</a>*/}
-                  {/*</Link>*/}
-                  {/*<Link prefetch href="/skills">*/}
-                  {/*  <a href="/skills" className="dropdown-item">Skills</a>*/}
-                  {/*</Link>*/}
-                  {/*<Link prefetch href="/examples/routing">*/}
-                  {/*  <a href="/examples/routing" className="dropdown-item">Routing</a>*/}
-                  {/*</Link>*/}
-                  {/*<Link prefetch href="/examples/styling">*/}
-                  {/*  <a href="/examples/styling" className="dropdown-item">Styling</a>*/}
-                  {/*</Link>
+          {/*  <a href="/auth/index" className="dropdown-item">Sign Up</a>*/}
+          {/*</Link>*/}
+          {/*<Link prefetch href="/examples/layout">*/}
+          {/*  <a href="/examples/layout" className="dropdown-item">Layout</a>*/}
+          {/*</Link>*/}
+          {/*<Link prefetch href="/skills">*/}
+          {/*  <a href="/skills" className="dropdown-item">Skills</a>*/}
+          {/*</Link>*/}
+          {/*<Link prefetch href="/examples/routing">*/}
+          {/*  <a href="/examples/routing" className="dropdown-item">Routing</a>*/}
+          {/*</Link>*/}
+          {/*<Link prefetch href="/examples/styling">*/}
+          {/*  <a href="/examples/styling" className="dropdown-item">Styling</a>*/}
+          {/*</Link>
                 </div>
               </div>
             </Nav>
@@ -337,8 +338,6 @@ export class MainBody extends React.Component {
 
 export class ContactFormModal extends React.Component {
   render() {
-    if (this.props.providers === null) return null
-
     return (
       <Modal isOpen={this.props.modal} toggle={this.props.toggleModal} style={{maxWidth: 490}}>
         <ModalHeader style={{padding: '0'}}><img src={modalHeaderImg} style={{width:'100%'}} alt="Sign up for a demo"/></ModalHeader>
